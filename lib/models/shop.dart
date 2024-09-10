@@ -40,4 +40,9 @@ class Shop extends ChangeNotifier {
     _cart.remove(product);
     notifyListeners();
   }
+
+  void clearCart() {
+    _cart.clear();
+    notifyListeners();
+  }
 }
