@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:minimal_ecommerce_app/pages/home_page.dart';
+import 'package:minimal_ecommerce_app/pages/intro_page.dart';
+import 'package:minimal_ecommerce_app/pages/shop_page.dart';
+import 'package:minimal_ecommerce_app/themes/light_mode.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +13,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      theme: lightMode,
+      home: const IntroPage(),
+      routes: {
+        '/intro_page': (context) => const IntroPage(),
+        '/shop_page': (context) => const ShopPage(),
+      },
     );
   }
 }
