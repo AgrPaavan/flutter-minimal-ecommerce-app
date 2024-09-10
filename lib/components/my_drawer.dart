@@ -61,8 +61,8 @@ class MyDrawer extends StatelessWidget {
             ),
             title: const Text("Exit"),
             onTap: () {
-              Navigator.pop(context);
-              Navigator.pop(context);
+              Navigator.pushNamedAndRemoveUntil(
+                  context, '/intro_page', (route) => false);
             },
           )
         ],
