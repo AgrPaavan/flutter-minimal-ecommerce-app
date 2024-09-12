@@ -72,6 +72,7 @@ You can download the latest APK file from the [Releases](https://github.com/agrp
 
 2. **Install the APK**:
    - Follow the prompts to install the app on your Android device.
+   - Make sure to allow "Unkown Sources" from settings.
 
 ## Contributing
 
